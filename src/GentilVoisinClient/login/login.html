@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="login.css" />
+    <title>GentilVoisin - Connexion</title>
+  </head>
+  <body>
+    <section>
+      <h1>Connexion</h1>
+      <div class="connexion-section">
+        <div>
+          <label for="login">E-mail : </label>
+          <input type="text" id="login" name="login" />
+        </div>
+        <div>
+          <label for="mdp">Mot de passe : </label>
+          <input type="password" id="mdp" name="mdp" />
+        </div>
+      </div>
+      <p>Pas de compte ? <a href="../inscription/inscription.html">S'inscrire</a></p>
+      <input
+        type="submit"
+        name="connexion"
+        value="Se connecter"
+        class="btn-connexion"
+      />
+      <span class="error-message" style="color: red;"></span>
+    </section>
+  </body>
+</html>
