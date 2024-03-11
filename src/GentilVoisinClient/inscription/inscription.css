@@ -1,0 +1,65 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+fieldset {
+    border: 0;
+}
+
+.aubert-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    padding: 16em;
+    color: #002C9C
+}
+
+section {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*
+.arriere {
+    
+}
+*/
+
+h1 ,p{
+    text-align: center;
+}
+
+input {
+    display: block;
+}
+
+fieldset table tr td input {
+    width: 20em; 
+    height:2em;
+}
+
+input[type="submit"] {
+    background-color: #002C9C;
+    color: white;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-family: inherit;
+    margin: auto;
+    
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background-color: #5b8aff;
+}
