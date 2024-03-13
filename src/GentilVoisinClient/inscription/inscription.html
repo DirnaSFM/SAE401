@@ -7,38 +7,26 @@
 </head>
 <body>
     <section class="bg-image">
-        <img src="img/hiver.jpg" />
-        <h1>S'inscrire</h1>
+        <!--<img src="img/hiver.jpg" />-->
+        <h1>Création de compte</h1>
         <fieldset>
             <table>
                 <tr>
-                    <td><label for="nom">Nom : </label>
-                    <br/><input type="text" id="nom" name="nom"></td>
+                    <td>
+                    <input type="text" id="login" name="login" placeholder="Login"></td>
                 </tr>
                 <tr>
-                    <td><label for="prenom">Prénom : </label>
-                        <br/><input type="text" id="prenom" name="prenom"></td>
+                    <td>
+                    <input type="password" id="mdp" name="mdp" placeholder="Mot de passe"></td>
                 </tr>
                 <tr>
-                    <td><label for="adresse">Adresse : </label>
-                        <br/><input type="text" id="adresse" name="adresse"></td>
-                </tr>
-                <tr>
-                    <td><label for="mail">Email : </label>
-                        <br/><input type="text" id="mail" name="mail"></td>
-                </tr>
-                <tr>
-                    <td><label for="login">Login : </label>
-                        <br/><input type="text" id="login" name="login"></td>
-                </tr>
-                <tr>
-                    <td><label for="mdp">Mot de passe : </label>
-                    <br/><input type="password" id="mdp" name="mdp"></td>
+                    <td>
+                    <input type="password" id="mdp" name="mdp" placeholder="Confirmer mot de passe"></td>
                 </tr>
             <table>
                 <p>Déjà un compte ? <a href="../login/login.html">Se connecter</a>  </p>
         </fieldset>
-        <input type="submit" name="inscription" value="S'inscrire" class="btn-inscription">
+        <input type="submit" name="inscription" value="Créer un compte" class="btn-inscription">
         <span class="error-message" style="color: red;"></span>
         </form>
     </section>

@@ -1,7 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
 
 fieldset {
@@ -38,16 +38,25 @@ h1 ,p{
 }
 
 input {
-    display: block;
+  font-size: 18px;
+  width: 100%;
+  height: 5em;
+  padding: 12px 12px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 fieldset table tr td input {
-    width: 20em; 
-    height:2em;
+    width: 40em; 
+    height: 5em;
+    font-size: 16px;
 }
 
 input[type="submit"] {
-    background-color: #002C9C;
+    background-color: limegreen;
     color: white;
     padding: 8px 32px;
     font-size: 16px;
@@ -61,5 +70,6 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"]:active {
-    background-color: #5b8aff;
+    background-color: lime;
 }
+
