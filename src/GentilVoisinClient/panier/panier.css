@@ -1,0 +1,149 @@
+/* Styles pour le panier */
+H2{
+	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 100px;
+}
+
+.panier {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.liste-panier {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.ligne-panier {
+	display: flex;
+	/* justify-content: space-between;  */
+	/* align-items: center;  */
+	margin-bottom: 10px;
+}
+
+.nom-produit {
+	flex-grow: 1;
+}
+
+.prix-produit {
+	margin-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	
+}
+
+.quantite-produit {
+	font-weight: bold;
+}
+
+.total-panier {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.bouton-commander {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 16px;
+	margin: 20px;
+	cursor: pointer;
+	border-radius : 5px ;
+}
+
+.bouton-continuer-achat {
+	background-color:#f44336; /* Red */
+	border:none ;
+	color:white ;
+	padding :15px 32px ;
+	text-align:center ;
+	text-decoration:none ;
+	display:inline-block ;
+	font-size :16px ;
+	margin-top :20px ;
+	cursor:pointer ;
+	border-radius :5px ;
+}
+
+.bouton-vider-panier {
+	background-color:#f44336; /* Red */
+	border:none ;
+	color:white ;
+	padding :15px 32px ;
+	text-align:center ;
+	text-decoration:none ;
+	display:inline-block ;
+	font-size :16px ;
+	margin-top :20px ;
+	cursor:pointer ;
+	border-radius :5px ;
+}
+
+img{
+    width: 10vw;
+	margin-right: 4vw;
+	min-width: 90px;
+}
+
+.bouton-quantite {
+	display: flex;
+	align-items: center;
+}
+
+
+.bouton-quantite-valeur {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 50px;
+	height: 30px;
+	text-align:center;
+}
+
+.colonnes-produit {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+
+	
+}
+.info-produit {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: 30%;
+	
+}
+
+ .colonnes-prix-quantite {
+	flex: 100%;
+	display: flex;
+	flex-direction:  column;
+	text-align: right;
+} 
+
+.head {
+	margin-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	
+}
+.nom-produit{
+	font-weight: bold ;
+}
