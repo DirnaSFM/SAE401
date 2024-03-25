@@ -1,0 +1,200 @@
+.logo {
+    width: 10vw;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+  
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  
+  /* body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #DBFFDA;
+  }
+  .logo-amizon{
+      max-width: 100%;
+      max-height: 100vh;
+      min-width: 8rem;
+      margin: auto;
+      width: 10vw;
+  }
+  
+  
+  .visible {
+      display: flex;
+  }
+  
+  .hidden {
+      display: none;
+  } */
+  
+  /* .header-site {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15%;
+      font-size: 40px;
+      background-color: #BF1C1C;
+      color: white;
+      font-weight: bold;
+      padding: 16px;
+  } */
+  
+  /* h3 ,h1{
+      color: #002C9C
+  }
+  
+  section {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+  }
+   
+  h1 {
+      text-align: center;
+  }
+  
+  input {
+      display: block;
+  }
+  
+  input[type="submit"] {
+      background-color: #3D712B;
+      color: white;
+      padding: 8px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 1px solid black;
+      margin: auto;
+      margin-top: 8px;
+      
+  }
+  
+  input[type="button"] {
+      background-color: white;
+      color: #3D712B;
+      min-width: 5vw;
+      
+  }
+  input[type="text"] {
+      background-color: #FFFFFF;
+  }
+  
+  img{
+      width: 3vw;
+  }
+  
+  
+  nav ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+  /*
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #BF1C1C;
+  }
+  
+  .hamburger {
+      display: none;
+  }
+  
+  ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+  }
+  
+  .menu, .logo, .options, .buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 20%;
+  }
+  
+  
+  
+  @media screen and (max-width: 700px) {
+     
+      .menu, .options, .buttons {
+          display: none;
+      }
+  
+      .hamburger {
+          display: block;
+          font-size: 1.5rem;
+          cursor: pointer;
+      }
+  
+      ul {
+          flex-direction: column;
+          justify-content: space-evenly;
+      }
+  
+      li {
+          margin: 0;
+      }
+  } */
+/*
+#test2{
+    border: black 1px solid;
+    margin-right: 75px;
+}
+
+.pull{
+    height: 75px;
+    width: 75px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+*/
+.btn-voir{
+    background-color: #3D712B;
+    color: white;
+    padding: 8px 10px;
+    font-family: inherit;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.btn-supression{
+    background-color: #b91818;
+    color: white;
+    padding: 8px 10px;
+    font-family: inherit;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.btn-supression-tout{
+    background-color: #b91818;
+    color: white;
+    padding: 8px 15px;
+    font-family: inherit;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 8px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.btn-voir:active {
+    background-color: #aace9f;
+}
+
+.btn-supression:active {
+    background-color: #ce9f9f;
+}
+
+.btn-supression-tout:active {
+    background-color: #ce9f9f;
+}
