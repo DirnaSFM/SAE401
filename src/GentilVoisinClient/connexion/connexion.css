@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/backgroundConnexion.png");
+    background-size: cover;
+}
+
+.conteneur {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.conteneur h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.conteneur p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.input input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.inscription {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inscription a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.inscription a:hover {
+    text-decoration: underline;
+}
