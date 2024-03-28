@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GentilVoisin - Connexion</title>
-    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="inscription.css">
+    <title>GentilVoisin - S'inscrire</title>
 </head>
-
 <body>
     <div class="conteneur">
         <h2>Bonjour !</h2>
-        <p>Connectez-vous pour découvrir toutes nos fonctionnalités.</p>
+        <p>Inscrivez-vous pour découvrir toutes nos fonctionnalités.</p>
         <form action="submit" method="post">
             <div class="input">
                 <label for="username">Nom d'utilisateur</label>
@@ -21,13 +18,17 @@
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
             </div>
+            <div class="input">
+                <label for="passwordconfirm">Confirmation de mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
             <form target="_blank">
-            <button type="submit" formaction="../accueil/accueil.html">Se connecter</button>
+            <button type="submit" formaction="inscription2.html">Suivant</button>
             </form>
-            <p class="inscription">Envie de nous rejoindre? 
-            <a href="../inscription/inscription1.html">Créer un compte</a></p>
+            <p class="connexion">Vous posséder déjà un compte ? 
+            <a href="../connexion/connexion.html">Se connecter</a></p>
         </form>
     </div>
 </body>
-
 </html>
+

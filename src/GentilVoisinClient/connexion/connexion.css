@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url("../images/backgroundConnexion.png");
+    background-repeat:no-repeat;
     background-size: cover;
 }
 
