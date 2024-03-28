@@ -21,6 +21,24 @@
             </ul>
         </nav>
     </header>-->
+    <div class="toolbar">
+        <nav>
+            <a href="../accueil/accueil.html">Accueil</a>
+            <a> - </a>
+            <a href="">Maison et Jardin</a>
+            <a> - </a>
+            <a href="">Nettoyage</a>
+            <a> - </a>
+            <a href="">Coaching personnel</a>
+            <a> - </a>
+            <a href="">Véhicules</a>
+            <a> - </a>
+            <a href="">Electronique</a>
+            <a> - </a>
+            <a href="">Autres</a>
+        </nav>
+    </div>
+    <div class="div-first">
     <h2>Gestion des utilisateurs</h2>
     <table class="caddieUser">
         <thead>
@@ -39,18 +57,23 @@
             </tr>
         </thead>
         <tbody>
-            <!--<tr>
+            <tr>
                 <td>" . $idutilisateur . "</td>
-                <td>" . $user["civilite"] . "</td>
-                <td>" . $user["nom"] . "</td>
-                <td>" . $user["prenom"] . "</td>
-                <td>" . $user["mel"] . "</td>
+                <td>" . $user["name"] . "</td>
+                <td>" . $user["firstname"] . "</td>
+                <td>" . $user["adress"] . "</td>
+                <td>" . $user["tel"] . "</td>
+                <td>" . $user["rayon"] . "</td>
                 <td>" . $user["login"] . "</td>
+                <td>" . $user["mdp"] . "</td>
+                <td>" . $user["nbjetons"] . "</td>
                 <td>" . $isAdmin . "</td>
                 <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a></td>
-                </tr>-->
+                </tr>
         </tbody>
     </table>
+    </div>
+    <div class="div-second"></div>
     <h2>Gestion des articles</h2>
 
     <table class="articles">
@@ -66,17 +89,18 @@
                 <th>Options</th>
             </tr>
         </thead>
-        <tbody>
+        <!--<tbody>
             <tr>
-                <!--<td>" . $article["refart"] . "</td>
+                <td>" . $article["refart"] . "</td>
                 <td>" . $article["designation"] . "</td>
                 <td>" . $article["pu"] . "</td>
                 <td>" . $article["unitecond"] . "</td>
                 <td>" . $article["remise"] . "</td>
                 <td><a href="../suppressionArticleBDD.php?refart=$refart\"><button>Supprimer</button></a></td>
-            </tr>";-->
-        </tbody>
+            </tr>";
+        </tbody>-->
     </table>
+    </div>
     <br><br>
     <div class="forms">
         <form class="allArticles" method="post" action="../ajoutUser.php">
