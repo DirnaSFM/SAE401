@@ -1,22 +1,110 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    /*background-color: lightgrey;*/
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+nav {
+    padding-top: 3%;
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .flex-container {
     display: flex;
-    align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
-    width: 90%;
-    height: 300px;
-    background-color: lightgray;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
 }
 
-.flex-container > div {
-    width: 25%;
-    padding: 5px 0;
-    margin: 5px;
+.div1-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.div1-profil {
+    max-height: 200px;
+    margin-right: 5%;
+    padding: 15px;
     background-color: #1c87c9;
-    /*text-align: center;
-    font-size: 35px;*/
+    border-radius: 10%;
+    text-align: left;
+}
+
+.div1-jeton {
+    max-height: 200px;
+    min-width: 150px;
+    padding: 5px;
+    padding-right: 20%;
+    background-color: #1c87c9;
+    border-radius: 10%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.jeton {
+    margin-top: 25%;
+    margin-left: 70%;
+    text-align: center;
+}
+
+.nom-profil {
+    padding-left: 5%;
+}
+
+.acceder{
+    padding-left: 5%;
+    text-decoration: underline;
+}
+
+.icon {
+    width: 25%;
+    border-radius: 100%;
+    border: 0.2rem solid red ;
+    margin-left: 2%;
+    margin-top: 5%;
+   /* margin-bottom: 20%;*/
+}
+
+.div-container {
+    margin-top: 5%;
+    width: 600px; 
+    height: 200px;
+    border: 0.1rem solid gray;
+}
+
+.div2-container {
+    margin-right: 28%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.div-button {
+    margin-right: 10px;
+    border-radius: 15%;
+    padding: 20%;
+    background-color: #9bceee;
+}
+
+.div3-container {
+    margin-right: 38%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.div-button-disconnect {
+    min-width: 150px;
+    border-radius: 15%;
+    padding: 18%;
+    background-color: lightgray;
 }
