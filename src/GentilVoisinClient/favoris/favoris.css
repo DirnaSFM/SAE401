@@ -1,200 +1,132 @@
-.logo {
-    width: 10vw;
-  }
-  
-  @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-  
-  body {
-    font-family: "Nunito", sans-serif;
-  }
-  
-  
-  /* body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      background-color: #DBFFDA;
-  }
-  .logo-amizon{
-      max-width: 100%;
-      max-height: 100vh;
-      min-width: 8rem;
-      margin: auto;
-      width: 10vw;
-  }
-  
-  
-  .visible {
-      display: flex;
-  }
-  
-  .hidden {
-      display: none;
-  } */
-  
-  /* .header-site {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 15%;
-      font-size: 40px;
-      background-color: #BF1C1C;
-      color: white;
-      font-weight: bold;
-      padding: 16px;
-  } */
-  
-  /* h3 ,h1{
-      color: #002C9C
-  }
-  
-  section {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-  }
-   
-  h1 {
-      text-align: center;
-  }
-  
-  input {
-      display: block;
-  }
-  
-  input[type="submit"] {
-      background-color: #3D712B;
-      color: white;
-      padding: 8px;
-      font-size: 16px;
-      font-family: inherit;
-      border: 1px solid black;
-      margin: auto;
-      margin-top: 8px;
-      
-  }
-  
-  input[type="button"] {
-      background-color: white;
-      color: #3D712B;
-      min-width: 5vw;
-      
-  }
-  input[type="text"] {
-      background-color: #FFFFFF;
-  }
-  
-  img{
-      width: 3vw;
-  }
-  
-  
-  nav ul {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      /* justify-content: space-between; */
-  /*
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #BF1C1C;
-  }
-  
-  .hamburger {
-      display: none;
-  }
-  
-  ul {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-  }
-  
-  .menu, .logo, .options, .buttons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 20%;
-  }
-  
-  
-  
-  @media screen and (max-width: 700px) {
-     
-      .menu, .options, .buttons {
-          display: none;
-      }
-  
-      .hamburger {
-          display: block;
-          font-size: 1.5rem;
-          cursor: pointer;
-      }
-  
-      ul {
-          flex-direction: column;
-          justify-content: space-evenly;
-      }
-  
-      li {
-          margin: 0;
-      }
-  } */
-/*
-#test2{
-    border: black 1px solid;
-    margin-right: 75px;
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f3f3f3;
 }
 
-.pull{
-    height: 75px;
-    width: 75px;
-    margin-left: 25px;
-    margin-top: 25px;
-}
-*/
-.btn-voir{
-    background-color: #3D712B;
-    color: white;
-    padding: 8px 10px;
-    font-family: inherit;
-    border: 1px solid gray;
-    margin: auto;
-    margin-top: 8px;
+.site-header {
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #8c8c8c;
 }
 
-.btn-supression{
-    background-color: #b91818;
-    color: white;
-    padding: 8px 10px;
-    font-family: inherit;
-    border: 1px solid gray;
-    margin: auto;
-    margin-top: 8px;
+.site-header .logo img {
+    height: 50px;
+    /* Adjust the size as needed */
 }
 
-.btn-supression-tout{
-    background-color: #b91818;
-    color: white;
-    padding: 8px 15px;
-    font-family: inherit;
-    border: 1px solid gray;
-    margin: auto;
-    margin-top: 8px;
+.site-header .post-ad-button {
+    background: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
 
-input[type="submit"]:hover {
+.site-header .post-ad-button .icon-plus {
+    margin-right: 10px;
+    height: 20px;
+    /* Adjust size as needed */
+}
+
+.site-header .search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+}
+
+.site-header .search-bar input {
+    flex-grow: 1;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: #EDEDED;
+}
+
+.site-header .search-icon {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    /* Adjust size as needed */
     cursor: pointer;
 }
 
-.btn-voir:active {
-    background-color: #aace9f;
+.site-header .connect-button {
+    display: block;
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
-.btn-supression:active {
-    background-color: #ce9f9f;
+.site-header .connect-button .profile-image {
+    height: 50px;
+    border-radius: 100%;
+    /* Adjust size as needed */
 }
 
-.btn-supression-tout:active {
-    background-color: #ce9f9f;
+.favoris {
+max-width: 800px;
+margin: auto;
+background: white;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.objet {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+border: 1px solid #dee2e6;
+padding: 10px;
+background-color: #e9ecef;
+}
+
+.image img {
+width: 200px;
+}
+
+.details {
+flex-grow: 1;
+padding-left: 20px;
+}
+
+.details h3 {
+margin-top: 0;
+}
+
+.supprimer {
+background-color: #dc3545;
+color: white;
+border: none;
+padding: 10px 20px;
+}
+
+.prixProduit {
+text-align: right;
+font-weight: bold;
+}
+
+.prixTotal {
+text-align: right;
+margin-top: 20px;
+font-size: 1.2em;
+font-weight: bold;
+color: #007bff;
+}
+
+h2 {
+color: #333;
 }

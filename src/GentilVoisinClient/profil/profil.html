@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="profil.css">
-    <title>GentilVoisin - Profil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GentiVoizin - Votre profil</title>
+  <link rel="stylesheet" href="profil.css">
 </head>
 
 <body>
-    <div class="toolbar">
-        <nav>
-            <a href="">Maison et Jardin</a>
-            <a> - </a>
-            <a href="">Nettoyage</a>
-            <a> - </a>
-            <a href="">Coaching personnel</a>
-            <a> - </a>
-            <a href="">Véhicules</a>
-            <a> - </a>
-            <a href="">Electronique</a>
-            <a> - </a>
-            <a href="">Autres</a>
-        </nav>
+  <header class="site-header">
+		<a href="../accueil/accueil.html" class="logo">
+			<img src="../images/logo.png" alt="Logo GentiVoizin">
+		</a>
+		<a href="../annonces/deposer_annonce.html" class="post-ad-button">
+			<img src="../images/plus.png" alt="+" class="icon-plus">Déposer une annonce
+		</a>
+		<div class="search-bar">
+			<input type="text" id="searchInput" placeholder="Rechercher sur SAE401">
+			<img src="../images/loupe.png" alt="Search" class="search-icon">
+		</div>
+		<a href="profil.html" class="connect-button">
+			<img src="../images/profil_player1.png" alt="Se connecter" class="profile-image">
+		</a>
+	</header>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="../images/profil_player1.png" alt="Profile Picture" class="profile-pic">
+      <div class="profile-info">
+        <h1 class='profile-name'>player1</h1>
+        <button onclick="location.href='public_profile.html'">Accéder à mon profile public</button>
+      </div>
+      <div class="wallet-info">
+        <h2>Porte-monnaie</h2>
+        <p>Jeton</p>
+      </div>
     </div>
-    <section class="flex-container">
-        <div class="div1-container">
-            <div class="div1-profil">
-                <img src="../images/profil_player1.png" class="icon">
-                <div class="nom-profil">player1</div>
-                <p class="acceder">Accéder à mon profil public</p>
-            </div>
-            <div class="div1-jeton">Porte-monnaie
-
-                <div class="jeton"><br />Jeton</div>
-            </div>
-        </div>
-        <div class="div-container">
-        </div>
-        <div class="div2-container">
-            <div class="div-button">Annonces</div>
-            <div class="div-button">Transactions</div>
-            <div class="div-button">Paramètres</div>
-        </div>
-        <div class="div3-container">
-            <div class="div-button-disconnect">Se déconnecter</div>
-        </div>
-    </section>
+    <div class="profile-body">
+      <button onclick="location.href='../annonces/annonces_voizin.html'">Annonces</button>
+      <button onclick="location.href='dashboard.html'">Tableau de bord</button>
+      <button onclick="location.href='settings.html'">Paramètres</button>
+    </div>
+    <button onclick="location.href='logout.html'" class="logout-button">Se déconnecter</button>
+  </div>
+  <script src="profile.js"></script>
 </body>
 
 </html>
