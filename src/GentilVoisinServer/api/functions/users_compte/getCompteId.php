@@ -1,10 +1,10 @@
 <?php
 
-function getCompteId(string $user) {
+function getCompteId(string $login) {
     global $db;
-    $dbStatement = $db->prepare("SELECT num_cpt FROM COMPTE WHERE num_cpt = ?");
-    $dbStatement->execute([$user]);
+    $dbStatement = $db->prepare("SELECT id_user FROM UTILISATEUR WHERE nom = ?");
+    $dbStatement->execute([$login]);
     $user = $dbStatement->fetchAll(PDO::FETCH_ASSOC);
 
-    return $user[0]["num_compte"];
+    return $user[0]["id_user"];
 }

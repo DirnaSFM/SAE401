@@ -2,7 +2,7 @@
 
 function userExists(string $nom, string $mdp) {
     global $db;
-    $dbStatement = $db->prepare("SELECT num_cpt, nom, mdp FROM COMPTE WHERE nom = ?");
+    $dbStatement = $db->prepare("SELECT id_user, mdp, nom FROM UTILISATEUR WHERE nom = ?");
     $dbStatement->execute([$nom]);
     $user = $dbStatement->fetchAll(PDO::FETCH_ASSOC);
 

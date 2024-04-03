@@ -2,16 +2,16 @@
 
 include "getUserById.php";
 
-function addUser(string $num_cpt, string $nom, string $prenom, string $adresse, string $tel, string $rayon, string $mdp, string $nbjeton) {
+function addUser(string $mdp, string $nom, string $prenom, string $adresse, string $tel, string $rayon, string $nbjeton) {
     global $db;
-    $dbStatement = $db->prepare("INSERT INTO COMPTE (num_cpt, nom, prenom, adresse, tel, rayon, mdp, nb_jeton) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $dbStatement = $db->prepare("INSERT INTO UTILISATEUR (id_user, mdp, nom, prenom, adresse, tel, rayon_dep, nb_jeton) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
     $hashedMdp = password_hash($mdp, PASSWORD_DEFAULT);
 
-    //$id = $db->lastInsertId();
-    $dbStatement>execute([$num_cpt, $nom, $prenom, $adresse, $tel, $rayon, $hashedMdp, $nbjeton]);
+    $id = $db->lastInsertId();
+    $dbStatement>execute([$id, $hashedMdp, $nom, $prenom, $adresse, $tel, $rayon, $nbjeton]);
 
-    $addedUser = getUserById($num_cpt);
+    $addedUser = getUserById($id);
 
     return $addedUser;
 

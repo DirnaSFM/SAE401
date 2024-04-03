@@ -1,9 +1,9 @@
 <?php
 
-function getServiceById(string $num_materiel) {
+function getServiceById(string $idmateriel) {
     global $db;
-    $dbStatement = $db->prepare("SELECT num_materiel, type_materiel, modele, taille, marque, descri FROM MATERIEL WHERE num_mat = ?");
-    $dbStatement->execute([$num_materiel]);
+    $dbStatement = $db->prepare("SELECT id_mat, id_user, description, photo, marque, categorie, modele, statut, prix_mat FROM MATERIEL WHERE id_mat = ?");
+    $dbStatement->execute([$idmateriel]);
     $materiel = $dbStatement->fetchAll(PDO::FETCH_ASSOC);
 
     return json_encode($materiel);

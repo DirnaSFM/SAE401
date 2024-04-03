@@ -1,9 +1,9 @@
 <?php
 
-function getUserById(string $user) {
+function getUserById(string $id) {
     global $db;
-    $dbStatement = $db->prepare("SELECT num_cpt, nom, prenom, adresse, tel, rayon, mdp, nb_jeton FROM COMPTE WHERE num_cpt = ?");
-    $dbStatement->execute([$user]);
+    $dbStatement = $db->prepare("SELECT id_user, mdp, nom, prenom, adresse, tel, rayon_dep, nb_jeton FROM UTILISATEUR WHERE id_user = ?");
+    $dbStatement->execute([$id]);
     $user = $dbStatement->fetchAll(PDO::FETCH_ASSOC);
 
     return json_encode($user);
