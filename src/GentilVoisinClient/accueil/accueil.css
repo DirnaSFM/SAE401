@@ -5,12 +5,83 @@ body {
     padding-right: 20%;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.site-header .logo img {
+    height: 50px;
+    /* Adjust the size as needed */
+}
+
+.site-header .post-ad-button {
+    background: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.site-header .post-ad-button .icon-plus {
+    margin-right: 10px;
+    height: 20px;
+    /* Adjust size as needed */
+}
+
+.site-header .search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+}
+
+.site-header .search-bar input {
+    flex-grow: 1;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: #EDEDED;
+}
+
+.site-header .search-icon {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    /* Adjust size as needed */
+    cursor: pointer;
+}
+
+.site-header .connect-button {
+    display: block;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.site-header .connect-button .profile-image {
+    height: 50px;
+    /* Adjust size as needed */
+}
+
 nav {
     padding-top: 3%;
     text-align: center;
 }
 
-nav > a {
+nav>a {
     text-decoration: none;
     color: black;
     padding-left: 1%;
@@ -27,7 +98,7 @@ nav > a {
     padding-left: 2%;
 }
 
-.categories > p {
+.categories>p {
     font-weight: bold;
 }
 
@@ -44,7 +115,7 @@ nav > a {
     color: white;
 }
 
-.categories > div >p {
+.categories>div>p {
     position: absolute;
     top: 50%;
     left: 50%;

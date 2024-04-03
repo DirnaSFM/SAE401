@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GentiVoizin - Annonces Utilisateur</title>
+	<link rel="stylesheet" href="annonces_voizin.css">
+</head>
+
+<body>
+	<header class="site-header">
+		<a href="../accueil/accueil.html" class="logo">
+			<img src="../images/logo.png" alt="Logo GentiVoizin">
+		</a>
+		<a href="../annonces/deposer_annonce.html" class="post-ad-button">
+			<img src="../images/plus.png" alt="+" class="icon-plus">Déposer une annonce
+		</a>
+		<div class="search-bar">
+			<input type="text" id="searchInput" placeholder="Rechercher sur SAE401">
+			<img src="../images/loupe.png" alt="Search" class="search-icon">
+		</div>
+		<a href="../profil/profil.html" class="connect-button">
+			<img src="../images/profil_player1.png" alt="Se connecter" class="profile-image">
+		</a>
+	</header>
+	<div class="page-container">
+		<aside class="filters-section">
+			<h2>Filtres:</h2>
+			<div class="filter distance">
+				<label for="distance">Distance</label>
+                <div class="distance-selector">
+				<input type="range" id="distance" name="distance" min="0" max="200" value="0" class="distance-slider">
+                <div class="input">
+                    <div class="current-distance">0km</div>
+                </div>
+            </div>
+			</div>
+			<div class="filter services">
+				<label for="services">Services</label>
+				<select id="services" name="services">
+					<option value="">Sélectionnez</option>
+					<option value="paysagisme">Paysagisme</option>
+					<option value="menuiserie">Menuiserie</option>
+					<option value="plomberie">Plomberie</option>
+					<option value="electricite">Electricité</option>
+					<option value="terrassement">Terrassement</option>
+					<option value="chauffagerie">Chauffagerie</option>
+					<option value="maconnerie">Maçonnerie</option>
+					<option value="peinture">Peinture</option>
+					<option value="demolition">Démolition</option>
+					<option value="batiment">Bâtiment</option>
+					<option value="toiture">Toiture</option>
+				</select>
+			</div>
+			<div class="filter material">
+				<label for="material">Matériel</label>
+				<select id="material" name="material">
+					<option value="">Sélectionnez</option>
+					<option value="tournevis">Tournevis</option>
+					<option value="truelle">Truelle</option>
+					<option value="marteau">Marteau</option>
+					<option value="niveau">Niveau à bulles</option>
+					<option value="scie">Scie circulaire</option>
+					<option value="perceuse">Perceuse sans fil</option>
+					<option value="pelle">Pelle</option>
+					<option value="serre">Serre-joint</option>
+					<option value="scie-main">Scie à main</option>
+					<option value="cle">Clé à molette</option>
+				</select>
+			</div>
+			<div class="filter category">
+				<label for="category">Catégorie</label>
+				<select id="category" name="category">
+					<option value="">Sélectionnez</option>
+					<option value="paysagisme">Paysagisme</option>
+					<option value="menuiserie">Menuiserie</option>
+					<option value="plomberie">Plomberie</option>
+					<option value="electricite">Electricité</option>
+					<option value="terrassement">Terrassement</option>
+					<option value="chauffagerie">Chauffagerie</option>
+					<option value="maconnerie">Maçonnerie</option>
+					<option value="peinture">Peinture</option>
+					<option value="demolition">Démolition</option>
+					<option value="batiment">Bâtiment</option>
+					<option value="toiture">Toiture</option>
+				</select>
+			</div>
+		</aside>
+		<div class="separator"></div>
+		<section class="products-section" id="products">
+			<!-- JavaScript will insert product cards here -->
+		</section>      
+	</div>
+	<script src="annonces_voizin.js"></script>
+</body>
+
+</html>

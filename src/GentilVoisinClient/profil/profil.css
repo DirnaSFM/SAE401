@@ -1,110 +1,133 @@
 body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding-left: 20%;
-    padding-right: 20%;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
 }
 
-nav {
-    padding-top: 3%;
-    text-align: center;
+.site-header {
+	background: #ffffff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #8c8c8c;
 }
 
-nav > a {
-    text-decoration: none;
-    color: black;
-    padding-left: 1%;
-    padding-right: 1%;
+.site-header .logo img {
+	height: 50px;
+	/* Adjust the size as needed */
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
+.site-header .post-ad-button {
+	background: #007bff;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
 }
 
-.div1-container {
-    display: flex;
-    flex-direction: row;
+.site-header .post-ad-button .icon-plus {
+	margin-right: 10px;
+	height: 20px;
+	/* Adjust size as needed */
 }
 
-.div1-profil {
-    max-height: 200px;
-    margin-right: 5%;
-    padding: 15px;
-    background-color: #1c87c9;
-    border-radius: 10%;
-    text-align: left;
+.site-header .search-bar {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex-grow: 1;
 }
 
-.div1-jeton {
-    max-height: 200px;
-    min-width: 150px;
-    padding: 5px;
-    padding-right: 20%;
-    background-color: #1c87c9;
-    border-radius: 10%;
-    text-align: left;
-    font-size: 1.2rem;
+.site-header .search-bar input {
+	flex-grow: 1;
+	padding: 10px 10px 10px 20px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	background-color: #EDEDED;
 }
 
-.jeton {
-    margin-top: 25%;
-    margin-left: 70%;
-    text-align: center;
+.site-header .search-icon {
+	position: absolute;
+	right: 10px;
+	width: 30px;
+	/* Adjust size as needed */
+	cursor: pointer;
 }
 
-.nom-profil {
-    padding-left: 5%;
+.site-header .connect-button {
+	display: block;
+	background: transparent;
+	border: none;
+	padding: 0;
 }
 
-.acceder {
-    padding-left: 5%;
-    text-decoration: underline;
+.site-header .connect-button .profile-image {
+	height: 50px;
+	border-radius: 100%;
+	/* Adjust size as needed */
 }
 
-.icon {
-    width: 25%;
-    border-radius: 100%;
-    border: 0.2rem solid red ;
-    margin-left: 2%;
-    margin-top: 5%;
-   /* margin-bottom: 20%;*/
+.profile-container {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
 }
 
-.div-container {
-    margin-top: 5%;
-    width: 600px; 
-    height: 200px;
-    border: 0.1rem solid gray;
+.profile-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 80px;
 }
 
-.div2-container {
-    margin-right: 28%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5%;
+.profile-pic {
+	border-radius: 50%;
+	width: 100px;
+	/* Adjust the size as needed */
 }
 
-.div-button {
-    margin-right: 10px;
-    border-radius: 15%;
-    padding: 20%;
-    background-color: #9bceee;
+.profile-info,
+.wallet-info {
+	text-align: center;
 }
 
-.div3-container {
-    margin-right: 38%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5%;
+.profile-info h1,
+.wallet-info h2 {
+	margin: 5px 0;
 }
 
-.div-button-disconnect {
-    min-width: 150px;
-    border-radius: 15%;
-    padding: 18%;
-    background-color: lightgray;
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+.profile-body {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.logout-button {
+	background-color: #dc3545;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.logout-button:hover {
+	background-color: #bd2130;
 }
