@@ -10,20 +10,13 @@
 
 <body>
   <header class="site-header">
-		<a href="../accueil/accueil.html" class="logo">
-			<img src="../images/logo.png" alt="Logo GentiVoizin">
-		</a>
-		<a href="../annonces/deposer_annonce.html" class="post-ad-button">
-			<img src="../images/plus.png" alt="+" class="icon-plus">Déposer une annonce
-		</a>
-		<div class="search-bar">
-			<input type="text" id="searchInput" placeholder="Rechercher sur SAE401">
-			<img src="../images/loupe.png" alt="Search" class="search-icon">
-		</div>
-		<a href="profil.html" class="connect-button">
-			<img src="../images/profil_player1.png" alt="Se connecter" class="profile-image">
-		</a>
-	</header>
+    <a href="../accueil/accueil.html" class="fleche">
+      <img src="../images/fleche.png" alt="Logo GentiVoizin">
+    </a>
+    <a href="../accueil/accueil.html" class="logo">
+      <img src="../images/logo.png" alt="Logo GentiVoizin">
+    </a>
+  </header>
   <div class="profile-container">
     <div class="profile-header">
       <img src="../images/profil_player1.png" alt="Profile Picture" class="profile-pic">
@@ -39,11 +32,11 @@
     <div class="profile-body">
       <button onclick="location.href='../annonces/annonces_voizin.html'">Annonces</button>
       <button onclick="location.href='dashboard.html'">Tableau de bord</button>
-      <button onclick="location.href='settings.html'">Paramètres</button>
+      <button onclick="location.href='../parametre/parametre.html'">Paramètres</button>
     </div>
-    <button onclick="location.href='logout.html'" class="logout-button">Se déconnecter</button>
+    <button onclick="location.href='../connexion/deconnexion.html'" class="logout-button">Se déconnecter</button>
   </div>
-  <script src="profile.js"></script>
+  <script src="profil.js"></script>
 </body>
 
 </html>
