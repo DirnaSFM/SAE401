@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GentiVoizin - Votre profil</title>
+  <link rel="stylesheet" href="parametre.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="../accueil/accueil.html" class="fleche">
+      <img src="../images/fleche.png" alt="Logo GentiVoizin">
+    </a>
+    <a href="../accueil/accueil.html" class="logo">
+      <img src="../images/logo.png" alt="Logo GentiVoizin">
+    </a>
+  </header>
+    <div class="profile-container">
+      <h1 class="parametres-title">Paramètres</h1>
+      <form>
+        <div class="inputs">
+            <div class="input">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label for="nom">Nom</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+
+            <label class="parametres-label" htmlFor="parametres-actual-password">Mot de passe actuel : </label>
+            <Input value=actualPassword class="styled-input parametres-input" id="parametres-actual-password" type="password" />
+            
+            <label class="parametres-label" htmlFor="parametres-new-password">Nouveau mot de passe : </label>
+            <Input value=newPassword class="styled-input parametres-input" id="parametres-new-password" type="password"/>
+
+            <label class="parametres-label" htmlFor="parametres-confirm-password">Confirmer le nouveau mot de passe : </label>
+            <Input value=confirmNewPassword class="styled-input parametres-input" id="parametres-confirm-password" type="password" />
+        </div>
+        <div id="error-message" style="color: red;"></div>
+        <button onClick={handleSubmit} value="Enregistrer" class="styled-btn parametres-btn">Enregistrer</button>
+        <button onClick={handleSubmit} value="Suppresion" class="styled-btn parametres-btn supprimer-btn">Supprimer le compte</button>
+      </form>
+    </div>
+</body>
+</html>

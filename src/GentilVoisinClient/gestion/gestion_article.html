@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion_tab.css">
+    <title>GentilVoisin - Gestion des article</title>
+</head>
+<body>
+	<header class="site-header">
+		<a href="gestion.html" class="fleche">
+		  <img src="../images/fleche.png" alt="Logo GentiVoizin">
+		</a>
+		<a href="../profil/profil.html" class="profil">
+		  <img src="../images/profil_player1.png" alt="Logo GentiVoizin">
+		</a>
+	</header>
+    <div class="div-second"></div>
+    <h2>Gestion des articles</h2>
+    <table class="articles">
+        <thead>
+            <tr>
+                <th>Référence article</th>
+                <th>Type</th>
+                <th>Marque</th>
+                <th>Désignation</th>
+                <th>Prix Unitaire</th>
+                <th>Unité</th>
+                <!--<th>Remise</th>-->
+                <th>Options</th>
+            </tr>
+        </thead>
+        <!--<tbody>
+            <tr>
+                <td>" . $article["refart"] . "</td>
+                <td>" . $article["designation"] . "</td>
+                <td>" . $article["pu"] . "</td>
+                <td>" . $article["unitecond"] . "</td>
+                <td>" . $article["remise"] . "</td>
+                <td><a href="../suppressionArticleBDD.php?refart=$refart\"><button>Supprimer</button></a></td>
+            </tr>";
+        </tbody>-->
+    </table>
+    </div>
+    <br><br>
+    <div class="forms">
+        <form action="../ajoutArticleBDD.php" method="post">
+            <fieldset>
+                <legend>Ajouter un article</legend>
+                <table>
+                    <tr>
+                        <td><label for="refart">Référence article : </label></td>
+                        <td><input type="text" name="refart" id="refart"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="designation">Désignation </label></td>
+                        <td><input type="text" id="designation" name="designation" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pu">Prix unitaire : </label></td>
+                        <td><input type="number" id="pu" name="pu" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="unitecond">Unité : </label></td>
+                        <td><input type="text" id="unitecond" name="unitecond" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="remise">Remise : </label></td>
+                        <td><input type="number" id="remise" name="remise" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="submit">Ajouter</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

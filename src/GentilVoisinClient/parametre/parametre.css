@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+.site-header {
+	background: #ffffff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #8c8c8c;
+}
+
+.site-header .logo img {
+	height: 50px;
+	/* Adjust the size as needed */
+}
+
+.site-header .fleche img {
+	height: 30px;
+	/* Adjust the size as needed */
+}
+
+.site-header .post-ad-button {
+	background: #007bff;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.site-header .post-ad-button .icon-plus {
+	margin-right: 10px;
+	height: 20px;
+	/* Adjust size as needed */
+}
+
+.site-header .search-bar {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex-grow: 1;
+}
+
+.site-header .search-bar input {
+	flex-grow: 1;
+	padding: 10px 10px 10px 20px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	background-color: #EDEDED;
+}
+
+.site-header .search-icon {
+	position: absolute;
+	right: 10px;
+	width: 30px;
+	/* Adjust size as needed */
+	cursor: pointer;
+}
+
+.site-header .connect-button {
+	display: block;
+	background: transparent;
+	border: none;
+	padding: 0;
+}
+
+.site-header .connect-button .profile-image {
+	height: 50px;
+	border-radius: 100%;
+	/* Adjust size as needed */
+}
+
+.main-container-parametres {
+    background-color: rgba(540, 143, 143, 0.4);
+    min-height: 100vh;
+}
+
+.parametres-title {
+   margin: 0;
+   padding: 16px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: auto;
+}
+
+.parametres-btn {
+    display: block;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.parametres-label {
+    text-align: justify;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.supprimer-btn {
+    color: black;
+    background-color: #FD9E9E;
+    margin-top: 32px;
+}

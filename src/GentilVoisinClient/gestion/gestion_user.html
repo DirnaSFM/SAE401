@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion_tab.css">
+    <title>GentilVoisin - Gestion des utilisateurs</title>
+</head>
+
+<body>
+	<header class="site-header">
+		<a href="../gestion/gestion.html" class="fleche">
+		  <img src="../images/fleche.png" alt="Logo GentiVoizin">
+		</a>
+		<a href="../profil/profil.html" class="profil">
+		  <img src="../images/profil_player1.png" alt="Logo GentiVoizin">
+		</a>
+	</header>
+    <div class="div-first">
+    <h2>Gestion des utilisateurs</h2>
+    <table class="tabUser">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Adresse</th>
+                <th>Téléphone</th>
+                <th>Rayon</th>
+                <th>Login</th>
+                <th>Mot de passe</th>
+                <th>Nombre de jetons</th>
+                <th>Adminisatrateur</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>" . $idutilisateur . "</td>
+                <td>" . $user["name"] . "</td>
+                <td>" . $user["firstname"] . "</td>
+                <td>" . $user["adress"] . "</td>
+                <td>" . $user["tel"] . "</td>
+                <td>" . $user["rayon"] . "</td>
+                <td>" . $user["login"] . "</td>
+                <td>" . $user["mdp"] . "</td>
+                <td>" . $user["nbjetons"] . "</td>
+                <td>" . $isAdmin . "</td>
+                <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a>
+                    <a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Modifier</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <br><br>
+    <div class="forms">
+        <form class="allArticles" method="post" action="../ajoutUser.php">
+            <fieldset>
+                <legend>Ajouter un utilisateur</legend>
+                <table>
+                    <tr>
+                        <td><label for="nom">Nom : </label></td>
+                        <td><input type="text" id="nom" name="nom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Prénom : </label></td>
+                        <td><input type="text" id="prenom" name="prenom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Adresse mail : </label></td>
+                        <td><input type="mail" id="mail" name="mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="login">Login : </label></td>
+                        <td><input type="text" id="login" name="login" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mdp">Mot de passe : </label></td>
+                        <td><input type="password" id="mdp" name="mdp" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="submit">Ajouter</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
