@@ -8,7 +8,7 @@
         $host = "devbdd.iutmetz.univ-lorraine.fr";
         $username = "varon1u_appli";
         $mdp = "TOCtoc12";
-        $db_name = "varon1u_sae401"; 
+        $db_name = "varon1u_SAE401SAH"; 
     
         $connexion = mysqli_connect($host,$username,$mdp,$db_name);
         $requete = mysqli_query($connexion,"SELECT * FROM FAVORIS");
