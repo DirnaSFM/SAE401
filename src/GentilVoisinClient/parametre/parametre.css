@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+.site-header {
+	background: #ffffff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #8c8c8c;
+}
+
+.site-header .logo img {
+	height: 50px;
+	/* Adjust the size as needed */
+}
+
+.site-header .fleche img {
+	height: 30px;
+	/* Adjust the size as needed */
+}
+
+.site-header .post-ad-button {
+	background: #007bff;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.site-header .post-ad-button .icon-plus {
+	margin-right: 10px;
+	height: 20px;
+	/* Adjust size as needed */
+}
+
+.site-header .search-bar {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex-grow: 1;
+}
+
+.site-header .search-bar input {
+	flex-grow: 1;
+	padding: 10px 10px 10px 20px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	background-color: #EDEDED;
+}
+
+.site-header .search-icon {
+	position: absolute;
+	right: 10px;
+	width: 30px;
+	/* Adjust size as needed */
+	cursor: pointer;
+}
+
+.site-header .connect-button {
+	display: block;
+	background: transparent;
+	border: none;
+	padding: 0;
+}
+
+.site-header .connect-button .profile-image {
+	height: 50px;
+	border-radius: 100%;
+	/* Adjust size as needed */
+}
+
+.conteneur {
+	margin: 50px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.main-container-parametres {
+    background-color: rgba(540, 143, 143, 0.4);
+    min-height: 100vh;
+}
+
+.parametres-title {
+   margin: 0;
+   padding: 16px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: auto;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.input input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.parametres-btn {
+    display: block;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.parametres-label {
+    text-align: justify;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.enregistrer-btn {
+    background-color: #007bff;
+	font-size: 14px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+	margin-top: 32px auto;
+}
+
+.supprimer-btn {
+	background-color: #d44343;
+	font-size: 14px;
+	margin: 32px auto;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}

@@ -1,169 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gestion.css">
-    <title>GentilVoisin - Gestion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GentiVoizin - Votre profil</title>
+  <link rel="stylesheet" href="gestion.css">
 </head>
 
 <body>
-    <!--<header class="header-site">
-        <div class="aubert-titre">GentilVoisin</div>
-        <nav class="options">
-            <ul>
-                <li class="opt-caddie"><a href="../caddie/caddie.php">Caddie</a></li>
-                <li class="opt-infos"><a href="../infos/infos.php">Informations</a></li>
-                <li class="opt-gestion"><a href="../gestion/gestion.php\">Gestion</a></li>
-                <li class="opt-deconnexion"><a href="../deconnexion.php">Déconnexion</a></li>
-            </ul>
-        </nav>
-    </header>-->
-    <div class="toolbar">
-        <nav>
-            <a href="../accueil/accueil.html">Accueil</a>
-            <a> - </a>
-            <a href="">Maison et Jardin</a>
-            <a> - </a>
-            <a href="">Nettoyage</a>
-            <a> - </a>
-            <a href="">Coaching personnel</a>
-            <a> - </a>
-            <a href="">Véhicules</a>
-            <a> - </a>
-            <a href="">Electronique</a>
-            <a> - </a>
-            <a href="">Autres</a>
-        </nav>
+  <header class="site-header">
+    <a href="../accueil/accueil.html" class="fleche">
+      <img src="../images/fleche.png" alt="Logo GentiVoizin">
+    </a>
+    <a href="../accueil/accueil.html" class="logo">
+      <img src="../images/logo.png" alt="Logo GentiVoizin">
+    </a>
+  </header>
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="profile-info">
+        <h1 class='profile-name'>Gestion</h1>
+      </div>
     </div>
-    <div class="div-first">
-    <h2>Gestion des utilisateurs</h2>
-    <table class="caddieUser">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Adresse</th>
-                <th>Téléphone</th>
-                <th>Rayon</th>
-                <th>Login</th>
-                <th>Mot de passe</th>
-                <th>Nombre de jetons</th>
-                <th>Adminisatrateur</th>
-                <th>Options</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>" . $idutilisateur . "</td>
-                <td>" . $user["name"] . "</td>
-                <td>" . $user["firstname"] . "</td>
-                <td>" . $user["adress"] . "</td>
-                <td>" . $user["tel"] . "</td>
-                <td>" . $user["rayon"] . "</td>
-                <td>" . $user["login"] . "</td>
-                <td>" . $user["mdp"] . "</td>
-                <td>" . $user["nbjetons"] . "</td>
-                <td>" . $isAdmin . "</td>
-                <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a></td>
-                </tr>
-        </tbody>
-    </table>
+    <div class="profile-body">
+      <button onclick="location.href='gestion_user.html'">Utilisateurs</button>
+      <button onclick="location.href='gestion_article.html'">Articles</button>
     </div>
-    <div class="div-second"></div>
-    <h2>Gestion des articles</h2>
-
-    <table class="articles">
-        <thead>
-            <tr>
-                <th>Référence article</th>
-                <th>Type</th>
-                <th>Marque</th>
-                <th>Désignation</th>
-                <th>Prix Unitaire</th>
-                <th>Unité</th>
-                <!--<th>Remise</th>-->
-                <th>Options</th>
-            </tr>
-        </thead>
-        <!--<tbody>
-            <tr>
-                <td>" . $article["refart"] . "</td>
-                <td>" . $article["designation"] . "</td>
-                <td>" . $article["pu"] . "</td>
-                <td>" . $article["unitecond"] . "</td>
-                <td>" . $article["remise"] . "</td>
-                <td><a href="../suppressionArticleBDD.php?refart=$refart\"><button>Supprimer</button></a></td>
-            </tr>";
-        </tbody>-->
-    </table>
-    </div>
-    <br><br>
-    <div class="forms">
-        <form class="allArticles" method="post" action="../ajoutUser.php">
-            <fieldset>
-                <legend>Ajouter un utilisateur</legend>
-                <table>
-                    <tr>
-                        <td><label for="nom">Nom : </label></td>
-                        <td><input type="text" id="nom" name="nom" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="prenom">Prénom : </label></td>
-                        <td><input type="text" id="prenom" name="prenom" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="mail">Adresse mail : </label></td>
-                        <td><input type="mail" id="mail" name="mail" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="login">Login : </label></td>
-                        <td><input type="text" id="login" name="login" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="mdp">Mot de passe : </label></td>
-                        <td><input type="password" id="mdp" name="mdp" required></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button class="submit">Ajouter</button></td>
-                    </tr>
-                </table>
-            </fieldset>
-        </form>
-
-        <form action="../ajoutArticleBDD.php" method="post">
-            <fieldset>
-                <legend>Ajouter un article</legend>
-                <table>
-                    <tr>
-                        <td><label for="refart">Référence article : </label></td>
-                        <td><input type="text" name="refart" id="refart"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="designation">Désignation </label></td>
-                        <td><input type="text" id="designation" name="designation" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="pu">Prix unitaire : </label></td>
-                        <td><input type="number" id="pu" name="pu" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="unitecond">Unité : </label></td>
-                        <td><input type="text" id="unitecond" name="unitecond" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="remise">Remise : </label></td>
-                        <td><input type="number" id="remise" name="remise" required></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button class="submit">Ajouter</button></td>
-                    </tr>
-                </table>
-            </fieldset>
-        </form>
-    </div>
+  </div>
+  <script src="gestion.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord</title>
+    <link rel="stylesheet" href="tableau_de_bord.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="../accueil/accueil.html" class="fleche">
+          <img src="../images/fleche.png" alt="Logo GentiVoizin">
+        </a>
+        <a href="../accueil/accueil.html" class="logo">
+          <img src="../images/logo.png" alt="Logo GentiVoizin">
+        </a>
+    </header>
+    <div class="dashboard-header">
+        <div class="user-info">
+            <img src="../images/profil_player1.png" alt="Photo de profil">
+            <div class="user-details">
+                <span id="user-tokens">Jetons: 0</span>
+                <span id="services-count">Services/Prêts en cours: 0</span>
+            </div>
+        </div>
+        <a href="services_page.html">Services que je propose</a>
+    </div>
+    
+    <div class="dashboard-main">
+        <div class="services-rendered">
+            <h2>Services et Prêts rendus</h2>
+            <div id="rendered-services-list"><!-- Les services rendus seront chargés ici --></div>
+        </div>
+        
+        <div class="services-received">
+            <h2>Services et Prêts reçus</h2>
+            <div id="received-services-list"><!-- Les services reçus seront chargés ici --></div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

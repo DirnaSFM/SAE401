@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-details span {
+    display: block;
+}
+
+.dashboard-main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.services-rendered, .services-received {
+    width: 45%;
+}
+
+.services-rendered h2, .services-received h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Style pour les cartes, à personnaliser selon vos besoins */
+.service-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.site-header {
+	background: #ffffff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #8c8c8c;
+}
+
+.site-header .logo img {
+	height: 50px;
+	/* Adjust the size as needed */
+}
+
+.site-header .fleche img {
+	height: 30px;
+	/* Adjust the size as needed */
+}

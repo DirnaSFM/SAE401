@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gestion_tab.css">
+    <title>GentilVoisin - Gestion des utilisateurs</title>
+</head>
+
+<body>
+	<header class="site-header">
+		<a href="../gestion/gestion.html" class="fleche">
+		  <img src="../images/fleche.png" alt="Logo GentiVoizin">
+		</a>
+		<a href="../profil/profil.html" class="profil">
+		  <img src="../images/profil_player1.png" alt="Logo GentiVoizin">
+		</a>
+	</header>
+    <div class="div-first">
+    <h2>Gestion des utilisateurs</h2>
+    <table class="tabUser">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Adresse</th>
+                <th>Téléphone</th>
+                <th>Rayon</th>
+                <th>Login</th>
+                <th>Mot de passe</th>
+                <th>Nombre de jetons</th>
+                <th>Adminisatrateur</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>" . $idutilisateur . "</td>
+                <td>" . $user["name"] . "</td>
+                <td>" . $user["firstname"] . "</td>
+                <td>" . $user["adress"] . "</td>
+                <td>" . $user["tel"] . "</td>
+                <td>" . $user["rayon"] . "</td>
+                <td>" . $user["login"] . "</td>
+                <td>" . $user["mdp"] . "</td>
+                <td>" . $user["nbjetons"] . "</td>
+                <td>" . $isAdmin . "</td>
+                <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a>
+                    <!--<a href="../suppressionUser.php?idutilisateur=$idutilisateur\"</a>--><button id="open-modal-btn">Modifier</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <br><br>
+    <div class="forms">
+        <form class="allArticles" method="post" action="../ajoutUser.php">
+            <fieldset>
+                <legend>Ajouter un utilisateur</legend>
+                <table>
+                    <tr>
+                        <td><label for="nom">Nom : </label></td>
+                        <td><input type="text" id="nom" name="nom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Prénom : </label></td>
+                        <td><input type="text" id="prenom" name="prenom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="text">Adresse : </label></td>
+                        <td><input type="text" id="text" name="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telephone : </label></td>
+                        <td><input type="text" id="tel" name="tel" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Rayon : </label></td>
+                        <td><div class="distance-selector">
+                            <div class="current-distance">100km</div>
+                            <input type="range" min="0" max="200" value="100" class="distance-slider">
+                            <div class="input-twice">
+                            <div class="min-distance">0</div>
+                            <div class="max-distance">200</div></td>
+                    </tr>
+                    <tr>
+                        <td><label for="login">Login : </label></td>
+                        <td><input type="text" id="login" name="login" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mdp">Mot de passe : </label></td>
+                        <td><input type="password" id="mdp" name="mdp" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="submit">Ajouter</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div
+      class="custom-modal"
+      id="login-modal"
+      tabindex="-1"
+      style="display: none"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="modal-login-form">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Email address
+                  <input type="text" class="form-control" id="email" />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">
+                  Password
+                  <input type="password" class="form-control" id="password" />
+                </label>
+                <button type="button" class="btn btn-secondary btn-sm" id="show-password">
+                  Show Password
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="btn-close-secondary">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="gestion.js"></script>
+</body>
+</html>
