@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	padding: 0;
 	font-family: Arial, sans-serif;
 	background-color: #f4f4f4;
 }
@@ -76,6 +77,15 @@ body {
 	/* Adjust size as needed */
 }
 
+.conteneur {
+	margin: 50px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
 .main-container-parametres {
     background-color: rgba(540, 143, 143, 0.4);
     min-height: 100vh;
@@ -93,6 +103,25 @@ body {
     margin: auto;
 }
 
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.input input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
 .parametres-btn {
     display: block;
     max-width: 250px;
@@ -107,8 +136,26 @@ body {
     font-size: 1.2rem;
 }
 
+.enregistrer-btn {
+    background-color: #007bff;
+	font-size: 14px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+	margin-top: 32px auto;
+}
+
 .supprimer-btn {
-    color: black;
-    background-color: #FD9E9E;
-    margin-top: 32px;
+	background-color: #d44343;
+	font-size: 14px;
+	margin: 32px auto;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
 }

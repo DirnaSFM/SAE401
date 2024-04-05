@@ -76,6 +76,12 @@ body {
     /* Adjust size as needed */
 }
 
+.site-header .connect-button .profile-player {
+    height: 50px;
+    border-radius: 100%;
+    /* Adjust size as needed */
+}
+
 nav {
     padding-top: 3%;
     text-align: center;

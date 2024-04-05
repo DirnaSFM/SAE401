@@ -69,3 +69,16 @@ button:hover {
 .logout-button:hover {
 	background-color: #bd2130;
 }
+
+.custom-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 101;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  .custom-modal label {
+	width: 100%;
+  }
