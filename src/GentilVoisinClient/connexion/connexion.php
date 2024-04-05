@@ -1,4 +1,7 @@
 <?php
+ echo '<pre>';
+ var_dump($_POST);
+ echo '</pre>';
 session_start(); // Démarrer la session
 
 // Vérifier si les champs du formulaire sont définis et non vides
@@ -34,7 +37,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['use
             exit();
         } else {
             // Informations de connexion incorrectes
-            header('Location: connexion.html');
+            
             echo "<script>alert('Nom d\'utilisateur ou mot de passe incorrect. Veuillez réessayer.');</script>";
             echo "<script>window.location.href = 'connexion.html';</script>";
         }
