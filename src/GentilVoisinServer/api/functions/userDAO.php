@@ -17,7 +17,7 @@
             $json_array[] = $row;
         }
     
-        print(json_encode($json_array));
+        return json_encode($json_array);
     }
 
     function getUserById(string $id_user) {
@@ -34,14 +34,10 @@
             $json_array[] = $row;
         }
     
-        print(json_encode($json_array));
+        return json_encode($json_array);
     }
-
-    // A tester
     
-   // function addUser(string $user_id, string $pseudo, string $mdpasse, string $nom, string $prenom, string $adresse, string $tel, string $rayon_dep, string $nb_jeton){
-    //    $requete = mysqli_query($connexion,"INSERT INTO UTILISATEUR(id_user, pseudo, mdp, nom, prenom, adresse, tel, rayon_dep, nb_jeton) VALUES ('".$id_user."','".$pseudo."','".$mdpasse."','".$nom."','".$prenom."','".$adresse."','".$tel."','".$rayon_dep."','".$nb_jeton."') ");
-    //};
-
-    getAllUser();
+    function addUser(string $user_id, string $pseudo, string $mdpasse, string $nom, string $prenom, string $adresse, string $tel, string $rayon_dep, string $nb_jeton){
+       $requete = mysqli_query($connexion,"INSERT INTO UTILISATEUR(id_user, pseudo, mdp, nom, prenom, adresse, tel, rayon_dep, nb_jeton) VALUES ('".$id_user."','".$pseudo."','".$mdpasse."','".$nom."','".$prenom."','".$adresse."','".$tel."','".$rayon_dep."','".$nb_jeton."') ");
+    };
 ?>
