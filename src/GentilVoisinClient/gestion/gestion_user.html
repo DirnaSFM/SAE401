@@ -49,7 +49,7 @@
                 <td>" . $user["nbjetons"] . "</td>
                 <td>" . $isAdmin . "</td>
                 <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a>
-                    <a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Modifier</button></a>
+                    <!--<a href="../suppressionUser.php?idutilisateur=$idutilisateur\"</a>--><button id="open-modal-btn">Modifier</button></a>
                 </td>
             </tr>
         </tbody>
@@ -70,8 +70,21 @@
                         <td><input type="text" id="prenom" name="prenom" required></td>
                     </tr>
                     <tr>
-                        <td><label for="mail">Adresse mail : </label></td>
-                        <td><input type="mail" id="mail" name="mail" required></td>
+                        <td><label for="text">Adresse : </label></td>
+                        <td><input type="text" id="text" name="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telephone : </label></td>
+                        <td><input type="text" id="tel" name="tel" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Rayon : </label></td>
+                        <td><div class="distance-selector">
+                            <div class="current-distance">100km</div>
+                            <input type="range" min="0" max="200" value="100" class="distance-slider">
+                            <div class="input-twice">
+                            <div class="min-distance">0</div>
+                            <div class="max-distance">200</div></td>
                     </tr>
                     <tr>
                         <td><label for="login">Login : </label></td>
@@ -88,5 +101,44 @@
             </fieldset>
         </form>
     </div>
+    <div
+      class="custom-modal"
+      id="login-modal"
+      tabindex="-1"
+      style="display: none"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="modal-login-form">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button type="button" class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Email address
+                  <input type="text" class="form-control" id="email" />
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">
+                  Password
+                  <input type="password" class="form-control" id="password" />
+                </label>
+                <button type="button" class="btn btn-secondary btn-sm" id="show-password">
+                  Show Password
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="btn-close-secondary">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="gestion.js"></script>
 </body>
 </html>
