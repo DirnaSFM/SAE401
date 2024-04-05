@@ -21,6 +21,7 @@
         return json_encode($json_array);
     }
 
+    // Récupère tous les favoris d'un utilisateur à partir de son id
     function getFavorisByIdUser(string $id_favoris) {
         $host = "devbdd.iutmetz.univ-lorraine.fr";
         $username = "varon1u_appli";

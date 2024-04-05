@@ -20,6 +20,7 @@
         return json_encode($json_array);
     }
 
+    // Récupère le panier d'un utilisateur
     function getPanierByIdUser(string $id_user) {
         $host = "devbdd.iutmetz.univ-lorraine.fr";
         $username = "varon1u_appli";

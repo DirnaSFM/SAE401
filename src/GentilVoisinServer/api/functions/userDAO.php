@@ -20,6 +20,7 @@
         return json_encode($json_array);
     }
 
+    // Récupère un utilisateur à l'aide de son id 
     function getUserById(string $id_user) {
         $host = "devbdd.iutmetz.univ-lorraine.fr";
         $username = "varon1u_appli";
