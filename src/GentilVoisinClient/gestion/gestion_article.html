@@ -26,7 +26,7 @@
                 <th>Type</th>
                 <th>Marque</th>
                 <th>Désignation</th>
-                <th>Prix Unitaire</th>
+                <th>Prix</th>
                 <!--<th>Unité</th>-->
                 <!--<th>Remise</th>-->
                 <th>Options</th>
@@ -34,12 +34,12 @@
         </thead>
         <tbody>
             <tr>
-                <td>" . $article["refart"] . "</td>
-                <td>" . $article["type"] . "</td>
-                <td>" . $article["marque"] . "</td>
-                <td>" . $article["designation"] . "</td>
-                <td>" . $article["prix"] . "</td>
-                <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a>
+                <td><!--" . $article["refart"] . "--></td>
+                <td><!--" . $article["type"] . "--></td>
+                <td><!--" . $article["marque"] . "--></td>
+                <td><!--" . $article["designation"] . "--></td>
+                <td><!--" . $article["prix"] . "--></td>
+                <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button class="supprimer-btn">Supprimer</button></a>
                     <a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Modifier</button></a>
                 </td>
             </tr>";
@@ -49,8 +49,8 @@
     <br><br>
     <div class="forms">
         <form action="../ajoutArticleBDD.php" method="post">
+            <h3>Ajouter un article</h3>
             <fieldset>
-                <legend>Ajouter un article</legend>
                 <table>
                     <tr>
                         <td><label for="refart">Référence article :</label></td>
@@ -75,11 +75,11 @@
                     <!--<tr>
                         <td><label for="unitecond">Unité : </label></td>
                         <td><input type="text" id="unitecond" name="unitecond" required></td>
-                    </tr>-->
+                    </tr>
                     <tr>
                         <td><label for="remise">Remise : </label></td>
                         <td><input type="number" id="remise" name="remise" required></td>
-                    </tr>
+                    </tr>-->
                     <tr>
                         <td colspan="2"><button class="submit">Ajouter</button></td>
                     </tr>

@@ -92,7 +92,7 @@ thead {
 }
 
 td:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 /*td:hover {
@@ -120,7 +120,7 @@ td {
 
 fieldset {
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #f8f8f8;
   border: 1px solid #ddd;
   margin: 0;
   padding: 0;
@@ -163,7 +163,7 @@ button:active {
 
 .distance-selector {
   margin: auto;
-  width: 65%;
+  width: 100%;
   text-align: center;
 }
 
@@ -174,13 +174,13 @@ button:active {
 }
 
 .distance-slider {
-  width: 94%;
+  width: 100%;
 }
 
 .min-distance,  .max-distance{
   display: inline-block;
   font-size: 14px; 
-  width: 57px;
+  width: 95px;
 }
 
 .supprimer-btn {

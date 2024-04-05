@@ -122,11 +122,6 @@ button:hover {
 .distance-slider {
     width: 94%;
 }
-/*
-.min-distance,  .max-distance{
-    display: inline-block;
-    width: 197px;
-}*/
 
 .min-distance {
     display: flex;

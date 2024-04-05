@@ -38,17 +38,17 @@
         </thead>
         <tbody>
             <tr>
-                <td>" . $idutilisateur . "</td>
-                <td>" . $user["name"] . "</td>
-                <td>" . $user["firstname"] . "</td>
-                <td>" . $user["adress"] . "</td>
-                <td>" . $user["tel"] . "</td>
-                <td>" . $user["rayon"] . "</td>
-                <td>" . $user["login"] . "</td>
-                <td>" . $user["mdp"] . "</td>
-                <td>" . $user["nbjetons"] . "</td>
-                <td>" . $isAdmin . "</td>
-                <td><a href="../suppressionUser.php?idutilisateur=$idutilisateur\"><button>Supprimer</button></a>
+                <td><!--" . $idutilisateur . "--></td>
+                <td><!--" . $user["name"] . "--></td>
+                <td><!--" . $user["firstname"] . "--></td>
+                <td><!--" . $user["adress"] . "--></td>
+                <td><!--" . $user["tel"] . "--></td>
+                <td><!--" . $user["rayon"] . "--></td>
+                <td><!--" . $user["login"] . "--></td>
+                <td><!--" . $user["mdp"] . "--></td>
+                <td><!--" . $user["nbjetons"] . "--></td>
+                <td><!--" . $isAdmin . "--></td>
+                <td><!--<a href="../suppressionUser.php?idutilisateur=$idutilisateur\">--><button class="supprimer-btn">Supprimer</button></a>
                     <!--<a href="../suppressionUser.php?idutilisateur=$idutilisateur\"</a>--><button id="open-modal-btn">Modifier</button></a>
                 </td>
             </tr>
@@ -58,8 +58,8 @@
     <br><br>
     <div class="forms">
         <form class="allArticles" method="post" action="../ajoutUser.php">
+          <h3>Ajouter un utilisateur</h3>
             <fieldset>
-                <legend>Ajouter un utilisateur</legend>
                 <table>
                     <tr>
                         <td><label for="nom">Nom : </label></td>

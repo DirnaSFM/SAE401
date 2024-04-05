@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscription.css">
+    <title>GentiVoizin - S'inscrire</title>
+</head>
+<body>
+    <div class="conteneur">
+        <h2>Bonjour !</h2>
+        <p>Inscrivez-vous pour découvrir toutes nos fonctionnalités.</p>
+        <form action="submit" method="post">
+            <div class="input">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input">
+                <label for="passwordconfirm">Confirmation de mot de passe</label>
+                <input type="password" id="passwordconfirm" name="passwordconfirm" required>
+            </div>
+            <div class="input-twice">
+                <div class="form-group col-md-4">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required size="17">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname" required size="18.5">
+                </div>
+            </div>
+            <div class="input">
+                <label for="adress">Adresse complète</label>
+                <input type="text" id="adress" name="adress" required>
+            </div>
+            <div class="input-twice">
+                <div class="form-group col-md-4">
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" name="city" required size="17">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="zipcode">Code postal</label>
+                    <input type="text" id="zipcode" name="zipcode" required size="18.5">
+                </div>
+            </div>
+            <div class="input">
+                <label for="tel">Numéro de téléphone</label>
+                <input type="text" id="tel" name="tel" required>
+            </div>
+            <div class="input">
+                <label for="rayon">Rayon de déplacement</label>
+                <div class="distance-selector">
+                    <div class="current-distance">100km</div>
+                    <input type="range" min="0" max="200" value="100" class="distance-slider">
+                    <div class="input-twice">
+                        <div class="min-distance">0km</div>
+                        <div class="max-distance">200km</div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" formaction="../accueil/accueil.html">S'inscrire</button>
+            <p class="connexion">Vous possédez déjà un compte ? <a href="../connexion/connexion.html">Se connecter</a></p>
+        </form>
+    </div>
+    <script src="inscription.js"></script>
+</body>
+</html>
