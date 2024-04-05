@@ -4,21 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GentiVoizin - Votre profil</title>
+  <title>GentiVoizin - Paramètres</title>
   <link rel="stylesheet" href="parametre.css">
 </head>
 
 <body>
   <header class="site-header">
-    <a href="../accueil/accueil.html" class="fleche">
+    <a href="../profil/profil.html" class="fleche">
       <img src="../images/fleche.png" alt="Logo GentiVoizin">
     </a>
     <a href="../accueil/accueil.html" class="logo">
       <img src="../images/logo.png" alt="Logo GentiVoizin">
     </a>
   </header>
-    <div class="profile-container">
+    <div class="conteneur">
       <h1 class="parametres-title">Paramètres</h1>
+      <h3 class="parametres-title">Modifier votre profil</h3>
       <form>
         <div class="inputs">
             <div class="input">
@@ -27,39 +28,38 @@
             </div>
             <div class="input">
                 <label for="nom">Nom</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="nom" name="nom" required>
             </div>
             <div class="input">
                 <label for="prenom">Prénom</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="prenom" name="prenom" required>
             </div>
             <div class="input">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" required>
+                <label for="adress">Adresse</label>
+                <input type="text" id="adress" name="adress" required>
             </div>
             <div class="input">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" required>
+                <label for="tel">Téléphone</label>
+                <input type="text" id="tel" name="tel" required>
             </div>
             <div class="input">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" required>
+              <label for="mdp "class="parametres-label">Mot de passe actuel</label>
+              <input type="password" id="mdp"  name="mdp" value=actualPassword/>
             </div>
-
-
-            <label class="parametres-label" htmlFor="parametres-actual-password">Mot de passe actuel : </label>
-            <Input value=actualPassword class="styled-input parametres-input" id="parametres-actual-password" type="password" />
-            
-            <label class="parametres-label" htmlFor="parametres-new-password">Nouveau mot de passe : </label>
-            <Input value=newPassword class="styled-input parametres-input" id="parametres-new-password" type="password"/>
-
-            <label class="parametres-label" htmlFor="parametres-confirm-password">Confirmer le nouveau mot de passe : </label>
-            <Input value=confirmNewPassword class="styled-input parametres-input" id="parametres-confirm-password" type="password" />
-        </div>
+            <div class="input">
+              <label class="parametres-label">Nouveau mot de passe</label>
+              <input type="password" id="mdp"  name="mdp" value=actualPassword/>
+            </div>
+            <div class="input">
+              <label class="parametres-label" >Confirmer le nouveau mot de passe : </label>
+              <input type="password" id="mdp"  name="mdp" value=actualPassword/>
+            </div>
+      </div>
         <div id="error-message" style="color: red;"></div>
-        <button onClick={handleSubmit} value="Enregistrer" class="styled-btn parametres-btn">Enregistrer</button>
-        <button onClick={handleSubmit} value="Suppresion" class="styled-btn parametres-btn supprimer-btn">Supprimer le compte</button>
+        <button onClick={handleSubmit} value="Enregistrer" class="enregistrer-btn">Enregistrer</button>
+        <button onClick={handleSubmit} value="Suppresion" class="supprimer-btn">Supprimer le compte</button>
       </form>
     </div>
+    <script src="parametre.js"></script>
 </body>
 </html>

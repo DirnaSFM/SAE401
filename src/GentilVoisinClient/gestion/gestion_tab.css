@@ -1,7 +1,8 @@
 body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .site-header {
@@ -86,7 +87,7 @@ thead {
   padding-bottom: 12px;
   padding-left: 10px;
   text-align: center;
-  background-color: rgb(82, 82, 82);
+  background-color: #0050a7;
   color: white;
 }
 
@@ -109,7 +110,7 @@ th,
 td {
   border-collapse: collapse;
   /*border: 1px solid black;*/
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #ddd;
 }
 
@@ -127,7 +128,7 @@ fieldset {
 
 legend {
   font-weight: bold;
-  background-color: gray;
+  background-color: #0060c7;
   color: white;
   padding: 5px 10px;
 }
@@ -139,7 +140,7 @@ option {
 }
 
 button {
-  background-color: rgb(65, 65, 65);
+  background-color: #007bff;
   color: white;
   padding: 8px;
   font-size: 16px;
@@ -151,11 +152,48 @@ button {
 }
 
 button:hover {
-  background-color: rgb(22, 22, 22);
+  background-color: #00356d;
   color: white;
 }
 
 button:active {
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(133, 144, 209);
   color: white;
 }
+
+.distance-selector {
+  margin: auto;
+  width: 65%;
+  text-align: center;
+}
+
+.current-distance {
+  text-align: right;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.distance-slider {
+  width: 94%;
+}
+
+.min-distance,  .max-distance{
+  display: inline-block;
+  font-size: 14px; 
+  width: 57px;
+}
+
+.supprimer-btn {
+  background-color: red;
+}
+
+/*
+.min-distance {
+  /*display: flex;
+  /*width: 75px;
+}
+
+.max-distance {
+  /*display: flex;*/
+  /*padding-left: 150px;
+}*/
